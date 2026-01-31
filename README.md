@@ -5,7 +5,6 @@ identifies cell boundaries and generates cropped PDF files for every single cell
 
 # How it Works
 
-- Preprocessing: The tool analyzes the PDF page layout.
 - Line Detection: Computer vision algorithms identify horizontal and vertical lines and determines intersections.
 - Cropping: The script "slices" the PDF into individual files based on the detected grid.
 - Parsing: Text and images are extracted from each resulting cell-crop.
@@ -14,6 +13,10 @@ identifies cell boundaries and generates cropped PDF files for every single cell
 
 You might need to adjust the code a bit to suit your document. Please see the `TODO` comments in the code for more information.
 
+To run the application run
+```sh
+python3 main.py
+```
 
 ## Example: Gymnastics Code of Points
 
