@@ -16,7 +16,7 @@ def __is_mostly_on_page(rect, page_cropbox):
 
 
 def __extract_text(page, output_path):
-    text = __normalize_whitespace(page.get_text())
+    text = page.get_text()
     with open(output_path, "w") as f:
         f.write(text)
 
