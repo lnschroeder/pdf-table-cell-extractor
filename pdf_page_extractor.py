@@ -63,6 +63,10 @@ def __extract_cropped_pdf(output_path, rectangle, doc, page_number):
 
 # TODO extracting a header is not mandatory
 def __extract_header(page):
+    for line in page.get_text().splitlines():
+        line = __normalize_whitespace(line)
+        if line.startswith("EG "):
+            return line
     return ""
 
 
